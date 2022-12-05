@@ -34,7 +34,7 @@ async function error_msg(fetchData) {
         }
         else if (jsonData.weather[0].main == "Rain") {
             document.getElementById('img').src = 'src/rain.gif';
-        } else if (jsonData.weather[0].main == "Cloudy") {
+        } else if (jsonData.weather[0].main == "Clouds") {
             document.getElementById('img').src = 'src/clouds.gif';
         }
         document.getElementById('temp').textContent = (jsonData.main.temp - 273.15).toPrecision(3) + "°C";
